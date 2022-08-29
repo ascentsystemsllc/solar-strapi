@@ -1,2 +1,2 @@
-# solar-strapi
-Strapi for CMS and Backend 
+# solar-frontend
+User Interface Application
