@@ -15,10 +15,10 @@
       "type": "string"
     },
     "lat": {
-      "type": "string"
+      "type": "decimal"
     },
     "lng": {
-      "type": "string"
+      "type": "decimal"
     }
   }
 }
