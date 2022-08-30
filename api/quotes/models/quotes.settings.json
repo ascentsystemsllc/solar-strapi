@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "quotes",
   "info": {
-    "name": "quotes"
+    "name": "quotes",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,10 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "quoteName": {
+    "squareFoot": {
       "type": "string"
     },
-    "comments": {
+    "year": {
+      "type": "string"
+    },
+    "members": {
       "type": "string"
     }
   }

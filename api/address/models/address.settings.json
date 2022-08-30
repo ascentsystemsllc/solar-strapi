@@ -11,16 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "address": {
       "type": "string"
     },
-    "street": {
+    "lat": {
       "type": "string"
     },
-    "zipcode": {
-      "type": "biginteger"
-    },
-    "city": {
+    "lng": {
       "type": "string"
     }
   }
