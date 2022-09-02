@@ -7,6 +7,7 @@ module.exports = {
         "https://solar.mohanganesh.com",
         "http://localhost:3000",
         "http://localhost:1337",
+        "https://solar-strapi.herokuapp.com",
       ],
     },
   },
