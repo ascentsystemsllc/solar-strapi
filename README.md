@@ -13,3 +13,7 @@ On the local environment it uses SQL Lite database
 npm install
 npm run develop
 ```
+
+gcloud builds submit --tag gcr.io/restaurant-dev-369923/strapi-dev-354
+
+gcloud run deploy strapi-dev-354 --image gcr.io/restaurant-dev-369923/strapi-dev-354
