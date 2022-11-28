@@ -1,0 +1,58 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'build',
+        '--build-arg',
+        'output_dist_path=${_OUTPUT_DIST_PATH}',
+        '-t',
+        'gcr.io/${_DEPLOY_PROJECT}/${_SERVICE_NAME}',
+        '.',
+      ]
+
+# push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$_TARGET_GCP_PROJECT/$_SERVICE_NAME'] 
+
+# Deploy container image to Cloud Run
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - '$_SERVICE_NAME'
+      - '--image'
+      - 'gcr.io/$_TARGET_GCP_PROJECT/$_SERVICE_NAME'
+      - '--region'
+      - '$_REGION'
+      - '--platform'
+      - 'managed'
+      - '$_AUTH_OPTION'
+      - '--project'
+      - '$_TARGET_GCP_PROJECT'
+      - '--set-env-vars'
+      - 'PROJECT_ID=${_DEPLOY_PROJECT}'
+      - '--set-env-vars'
+      - 'DATABASE_NAME=${_DATABASE_NAME}'
+      - '--set-env-vars'
+      - 'DATABASE_USERNAME=${_DATABASE_USERNAME}'
+      - '--set-env-vars'
+      - 'DATABASE_PASSWORD=${_DATABASE_PASSWORD}'
+
+substitutions:
+  _OUTPUT_DIST_PATH: '/angular-contentful-richtext/'
+  _DEPLOY_PROJECT: 'restaurant-dev-369923'
+  _SERVICE_NAME: 'strapi-dev-354'
+  _TARGET_GCP_PROJECT: 'restaurant-dev-369923'
+  _REGION: 'us-central1'
+  _AUTH_OPTION: '--allow-unauthenticated'
+  _DATABASE_NAME: 'databasename'
+  _DATABASE_USERNAME: 'username'
+  _DATABASE_PASSWORD: 'password'
+
+
+
+options:
+  machineType: 'N1_HIGHCPU_32'
+
+timeout: 2700s
