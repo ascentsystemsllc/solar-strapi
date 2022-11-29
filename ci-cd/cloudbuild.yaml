@@ -46,9 +46,9 @@ substitutions:
   _TARGET_GCP_PROJECT: 'restaurant-dev-369923'
   _REGION: 'us-central1'
   _AUTH_OPTION: '--allow-unauthenticated'
-  _DATABASE_NAME: 'databasename'
-  _DATABASE_USERNAME: 'username'
-  _DATABASE_PASSWORD: 'password'
+  _DATABASE_NAME: ''
+  _DATABASE_USERNAME: ''
+  _DATABASE_PASSWORD: ''
 
 
 
