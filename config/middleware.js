@@ -8,7 +8,8 @@ module.exports = {
         "http://localhost:3000",
         "http://localhost:1337",
         "https://solar-strapi.herokuapp.com",
-        "https://strapi-dev-354-2f2ia5goua-uc.a.run.app"
+        "https://strapi-dev-354-2f2ia5goua-uc.a.run.app",
+        "https://restaurant-2f2ia5goua-uc.a.run.app"
       ],
     },
   },
