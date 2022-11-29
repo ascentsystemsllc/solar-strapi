@@ -38,6 +38,8 @@ steps:
       - 'DATABASE_USERNAME=${_DATABASE_USERNAME}'
       - '--set-env-vars'
       - 'DATABASE_PASSWORD=${_DATABASE_PASSWORD}'
+      - '--set-env-vars'
+      - 'DATABASE_HOST=${_DATABASE_HOST}'
 
 substitutions:
   _OUTPUT_DIST_PATH: '/angular-contentful-richtext/'
