@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "addresses",
+  "collectionName": "menus",
   "info": {
-    "name": "Address",
+    "name": "Menu",
     "description": ""
   },
   "options": {
@@ -10,15 +10,14 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
-    "address": {
+    "name": {
       "type": "string"
     },
-    "lat": {
-      "type": "decimal"
-    },
-    "lng": {
-      "type": "decimal"
+    "categories": {
+      "collection": "category",
+      "via": "menu"
     }
   }
 }

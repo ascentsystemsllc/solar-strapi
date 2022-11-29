@@ -1,24 +1,21 @@
 {
   "kind": "collectionType",
-  "collectionName": "quotes",
+  "collectionName": "restaurants",
   "info": {
-    "name": "quotes",
-    "description": ""
+    "name": "Restaurant"
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
-    "squareFoot": {
+    "name": {
       "type": "string"
     },
-    "year": {
-      "type": "string"
-    },
-    "members": {
-      "type": "string"
+    "menu": {
+      "model": "menu"
     }
   }
 }
