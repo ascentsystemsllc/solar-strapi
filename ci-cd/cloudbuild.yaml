@@ -54,8 +54,8 @@ substitutions:
   _DATABASE_HOST: ''
 
 
-options:
- machineType: 'E2_HIGHCPU_8'
+#options:
+# machineType: 'E2_HIGHCPU_8'
 
 
 timeout: 2700s
