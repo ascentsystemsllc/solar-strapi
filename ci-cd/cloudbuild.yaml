@@ -40,11 +40,11 @@ steps:
       - 'DATABASE_PASSWORD=${_DATABASE_PASSWORD}'
       - '--set-env-vars'
       - 'DATABASE_HOST=${_DATABASE_HOST}'
-       - '--set-env-vars'
+      - '--set-env-vars'
       - 'CLOUDINARY_NAME=${_CLOUDINARY_NAME}'
-       - '--set-env-vars'
+      - '--set-env-vars'
       - 'CLOUDINARY_KEY=${_CLOUDINARY_KEY}'
-       - '--set-env-vars'
+      - '--set-env-vars'
       - 'CLOUDINARY_SECRET=${_CLOUDINARY_SECRET}'
 
 substitutions:
