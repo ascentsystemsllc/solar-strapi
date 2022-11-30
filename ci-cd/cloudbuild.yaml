@@ -40,6 +40,12 @@ steps:
       - 'DATABASE_PASSWORD=${_DATABASE_PASSWORD}'
       - '--set-env-vars'
       - 'DATABASE_HOST=${_DATABASE_HOST}'
+       - '--set-env-vars'
+      - 'DATABASE_HOST=${_CLOUDINARY_NAME}'
+       - '--set-env-vars'
+      - 'DATABASE_HOST=${_CLOUDINARY_KEY}'
+       - '--set-env-vars'
+      - 'DATABASE_HOST=${_CLOUDINARY_SECRET}'
 
 substitutions:
   _OUTPUT_DIST_PATH: '/angular-contentful-richtext/'
