@@ -58,6 +58,11 @@ substitutions:
   _DATABASE_USERNAME: ''
   _DATABASE_PASSWORD: ''
   _DATABASE_HOST: ''
+  _CLOUDINARY_NAME: ''
+  _CLOUDINARY_KEY: ''
+  _CLOUDINARY_SECRET: ''
+
+
 
 
 #options:
