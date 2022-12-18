@@ -10,7 +10,8 @@ module.exports = {
         "https://solar-strapi.herokuapp.com",
         "https://strapi-dev-354-2f2ia5goua-uc.a.run.app",
         "https://restaurant-2f2ia5goua-uc.a.run.app",
-        "https://restaurant.ascentitllc.com"
+        "https://restaurant.ascentitllc.com",
+        "https://strapi-dev-354-test-2f2ia5goua-uc.a.run.app"
       ],
     },
   },
