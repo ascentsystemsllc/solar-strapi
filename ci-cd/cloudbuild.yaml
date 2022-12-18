@@ -30,6 +30,12 @@ steps:
       - '$_AUTH_OPTION'
       - '--project'
       - '$_TARGET_GCP_PROJECT'
+      - '--vpc-connector'
+      - '$_VPC_CONNECTOR_NAME'
+      - '--vpc-egress'
+      - '$_VPC_ACCESS_EGRESS'
+      - '--add-cloudsql-instances'
+      - '$_SQL_INSTANCE'
       - '--set-env-vars'
       - 'PROJECT_ID=${_DEPLOY_PROJECT}'
       - '--set-env-vars'
@@ -50,7 +56,7 @@ steps:
 substitutions:
   _OUTPUT_DIST_PATH: '/angular-contentful-richtext/'
   _DEPLOY_PROJECT: 'restaurant-dev-369923'
-  _SERVICE_NAME: 'strapi-dev-354'
+  _SERVICE_NAME: 'strapi-dev-354-test'
   _TARGET_GCP_PROJECT: 'restaurant-dev-369923'
   _REGION: 'us-central1'
   _AUTH_OPTION: '--allow-unauthenticated'
@@ -61,6 +67,9 @@ substitutions:
   _CLOUDINARY_NAME: ''
   _CLOUDINARY_KEY: ''
   _CLOUDINARY_SECRET: ''
+  _VPC_CONNECTOR_NAME: 'serverless-connector'
+  _VPC_ACCESS_EGRESS: 'private-ranges-only'
+  _SQL_INSTANCE: ''
 
 
 
