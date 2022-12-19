@@ -10,6 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/provider-email-sendgrid": "^4.5.4",
     "knex": "0.21.18",
     "pg": "^8.6.0",
     "pg-connection-string": "^2.4.0",
