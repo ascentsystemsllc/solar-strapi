@@ -52,7 +52,7 @@ steps:
       - 'CLOUDINARY_KEY=${_CLOUDINARY_KEY}'
       - '--set-env-vars'
       - 'CLOUDINARY_SECRET=${_CLOUDINARY_SECRET}'
-       - '--set-env-vars'
+      - '--set-env-vars'
       - 'SENDGRID_API_KEY=${_SENDGRID_API_KEY}'
 
 substitutions:
