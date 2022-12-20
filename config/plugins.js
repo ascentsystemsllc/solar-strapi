@@ -14,14 +14,13 @@ module.exports = ({ env }) => ({
   },
   email: {
     config: {
-      provider: 'sendgrid',
-      providerOptions: {
-        apiKey: env('SENDGRID_API_KEY'),
-      },
-      settings: {
-        defaultFrom: 'mohan@ascentitllc.com',
-        defaultReplyTo: 'mohan@ascentitllc.com',
-      },
+        provider: 'strapi-provider-email-sendinblue',
+        providerOptions: {
+            sendinblue_api_key: env('SENDINBLUE_API_KEY'),
+            sendinblue_default_replyto: 'mohanganesh@gmail.com',
+            sendinblue_default_from: 'mohanganesh@gmail.com',
+            sendinblue_default_from_name: 'mohanganesh@gmail.com'
+        },
     },
   },
   // ...
